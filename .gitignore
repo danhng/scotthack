@@ -1,19 +1,16 @@
-.metadata
-bin/
-tmp/
-*.tmp
-*.bak
-*.swp
-*~.nib
-local.properties
-.settings/
-.loadpath
+stockmarket/.metadata
+stockmarket/bin/
+stockmarket/tmp/
+
+stockmarket/local.properties
+stockmarket/.settings/
+stockmarket/.loadpath
 
 # Eclipse Core
-.project
+stockmarket/.project
 
 # External tool builders
-.externalToolBuilders/
+stockmarket/.externalToolBuilders/
 
 # Locally stored "Eclipse launch configurations"
 *.launch
