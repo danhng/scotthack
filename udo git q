@@ -1,0 +1,103 @@
+[33mcommit dad32a7f02b8b0ec87eff26133443b9351145b30[m
+Author: danhng <d.t.nguyen@newcastle.ac.uk>
+Date:   Sat Feb 6 12:19:15 2016 +0000
+
+    Clone the project
+
+[33mcommit 5b7b5a980bac253e970936688b201187b33a9a8f[m
+Author: danhng <d.t.nguyen@newcastle.ac.uk>
+Date:   Sat Feb 6 12:17:06 2016 +0000
+
+    remove the redundant project
+
+[33mcommit a296d15b2d9cec820a2378a3ef4703355cbf9caf[m
+Merge: 480df96 98f9fee
+Author: deniz-k <d.kucukterzi@newcastle.ac.uk>
+Date:   Fri Feb 5 15:14:58 2016 +0000
+
+    deniz commit
+
+[33mcommit 98f9fee9d4c687f6e57e591e4a0d1cc7ba218b90[m
+Author: U-Deniz-PC\raff <raffprta@gmail.com>
+Date:   Fri Feb 5 15:07:48 2016 +0000
+
+    Test
+
+[33mcommit 832768bde4413bc78dd8956417a0a9eeec8e342d[m
+Author: U-Deniz-PC\raff <raffprta@gmail.com>
+Date:   Fri Feb 5 15:04:37 2016 +0000
+
+    Hopefully working gitignore
+
+[33mcommit 480df9649fab3369cf58d4a14c5ddfa0d386b89a[m
+Merge: 0bfe32f 854cad2
+Author: Deniz <Deniz@Deniz_PC>
+Date:   Fri Feb 5 15:00:13 2016 +0000
+
+    Merge branch 'master' of https://github.com/danhng/scotthack.git
+
+[33mcommit 5baab2cec72fac7eca1d52fdee55b6e83415c378[m
+Author: U-Deniz-PC\raff <raffprta@gmail.com>
+Date:   Fri Feb 5 14:59:49 2016 +0000
+
+    remove stuff
+
+[33mcommit 0bfe32fc6e2da62d3f0e77f4a3bf28bdc57caf34[m
+Author: Deniz <Deniz@Deniz_PC>
+Date:   Fri Feb 5 14:59:27 2016 +0000
+
+    test change
+
+[33mcommit 854cad29d8b4b86d13e9192ee79fcb454bdc3a0e[m
+Author: U-Deniz-PC\raff <raffprta@gmail.com>
+Date:   Fri Feb 5 14:58:21 2016 +0000
+
+    gitignore
+
+[33mcommit 6539441235b164201085403eedb17709032450a7[m
+Author: U-Deniz-PC\raff <raffprta@gmail.com>
+Date:   Fri Feb 5 14:53:02 2016 +0000
+
+    Test
+
+[33mcommit 45a4e2f5cdf8ff3d328d9e773a5cda139e53b610[m
+Author: danhng <d.t.nguyen@newcastle.ac.uk>
+Date:   Fri Feb 5 14:51:04 2016 +0000
+
+    Add a test file
+
+[33mcommit 57ddeaf2820df77c675fb3f1da0b99d8d62add19[m
+Author: danhng <d.t.nguyen@newcastle.ac.uk>
+Date:   Fri Feb 5 14:44:53 2016 +0000
+
+    add src folder
+
+[33mcommit 84eab5dbebe4a248319e078fd0d48b4a50a3e184[m
+Author: danhng <d.t.nguyen@newcastle.ac.uk>
+Date:   Fri Feb 5 14:31:34 2016 +0000
+
+    Set up the Eclipse project (Java)
+
+[33mcommit e0bf52bed416964a79a3be50b3e2e9f07d969184[m
+Author: danhng <d.t.nguyen@newcastle.ac.uk>
+Date:   Thu Feb 4 23:24:30 2016 +0000
+
+    update the tips file
+
+[33mcommit 1ec821549f69b05eab78d1c1e3842390c42244e7[m
+Author: danhng <d.t.nguyen@newcastle.ac.uk>
+Date:   Thu Feb 4 23:23:29 2016 +0000
+
+    add some helpful (hopefully) resources
+
+[33mcommit 497d20694d6c76194dfac346e0aac216b5331246[m
+Author: U-Deniz-PC\raff <raffprta@gmail.com>
+Date:   Wed Feb 3 15:17:42 2016 +0000
+
+    Testing git push
+
+[33mcommit 9ab87e9dfc0796316f91c40eb8a53c4c737454b5[m
+Author: Danh Nguyen <d.t.nguyen@newcastle.ac.uk>
+Date:   Tue Feb 2 15:24:39 2016 +0000
+
+    Initial commit
