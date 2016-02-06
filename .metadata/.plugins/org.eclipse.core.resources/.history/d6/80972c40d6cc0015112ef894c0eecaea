@@ -1,0 +1,70 @@
+package trading_game;
+ 
+import java.util.ArrayList;
+import java.util.List;
+ 
+import exceptions.InsufficientFundsException;
+import exceptions.InsufficientSharesException;
+import game.BaseTradingStrategy;
+import game.DailyInput;
+import game.DailyOutput;
+ 
+public class TradingStrategy extends BaseTradingStrategy {
+   
+    public TradingStrategy (){
+        // Initialise any variables needed.
+       
+    }
+   
+    // input starts from the most recent day
+    public double crossoverEMA(List<DailyInput> l){
+        double ema = 0;
+        Double[] alphas = new Double[l.size()];
+        double a = 2 / (1 + l.size());
+        double divider = 0;
+        for (int i = 0; i < l.size(); i++) {
+            alphas[i] = Math.pow(1 - a, i);
+            divider += alphas[i];  
+        }
+        assert divider != 0;
+        // calculate the ema
+        double sum = 0;
+        for (int i = 0; i < l.size(); i++) {
+            // get the avg
+            DailyInput in = l.get(i);
+            double avg = (in.getClose() + in.getOpen() + in.getHigh() + in.getLow() ) / 4;
+            sum += alphas[i] * avg;
+        }
+        return sum / divider;
+    }
+    // list of a COMPANY stock (each element represents the stocks of one company)
+    List<DailyInput> pastStock  = new ArrayList<DailyInput>();
+    @Override
+    public DailyOutput makeDailyTrade(DailyInput input) throws InsufficientFundsException, InsufficientSharesException {
+        // add the most recent day from
+        if(input.getRemainingDays() == 0){
+            pastStock  = new ArrayList<DailyInput>();  
+            pastStock.add(0, input);
+        }      
+        else
+            pastStock.add(0, input);
+       
+        //get the Exponential Moving Average for the stock chart
+        double crossover = crossoverEMA(pastStock);
+   
+        // compare with closing price
+        double crossprice = input.getClose() - crossover;
+       
+        System.out.println(crossprice);
+       
+        DailyOutput output;
+        if (input.getDay() % 2 == 0) {
+            output = tradingManager.buyMaxNumberOfShares(input);
+ 
+        } else {
+            output = tradingManager.sellAllShares(input);
+        }
+       
+        return output;
+    }
+}
